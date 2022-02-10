@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 전체화면에 큰사진을 뒷배경 */
+    body { /* body범위에 사진을 적용하겠다 */
+        background-image: url(img/tree.jpg);
+        background-repeat: no-repeat; /* 반복x */
+
+        height: 1000px;
+
+        /* background-size: auto */ /* 기본값: 원본크기 */
+        /* background-size: contain; */ /*contain - 사진이 잘리지 않도록하고 나머지 공간은 공백으로 만듬 */
+         background-size: cover;  /* cover - 빈공간없이 사진으로 채운다 */
+    }
+
+    </style>
+
+</head>
+<body>
+   가나다라
+</body>
+</html>

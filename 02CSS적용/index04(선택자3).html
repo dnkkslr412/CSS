@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 가상선택자 - 특별한 동작상태일때 */
+        /* 마우스가 닿을때 적용되는 css */
+        .list > ul > li > a:hover {background-color: yellow;} 
+
+        /* input에 포커스가 들어갈때 적용되는 css(클릭한 창 주변이 설정된 색으로나옴) */
+        .inner > input:focus {border-color: blue;}
+
+        /* p태그가 활성화되었을때 적용되는 css(클릭으로 누르고 있을때만 색상이 나옴))*/
+        .title:active {background-color: red;}
+    </style>
+
+</head>
+<body>
+    
+    <p class="title">액티브</p>
+
+    <div class="inner">
+        <input type="text">
+    </div>
+
+
+    <div class="list">
+        <ul>
+            <li><a href="#">목록1</a></li>
+            <li><a href="#">목록1</a></li>
+            <li><a href="#">목록1</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

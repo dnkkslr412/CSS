@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul, li {list-style: none;} /* 스타일속성 제거 */
+        .box {background-color: black; text-align: center;} /* box클래를 가진 ul 속성 설정 */
+        .box li {display: inline;} /* 박스 클래스의 인라인 속성추가 */
+        .box li a { /* 박스 클래스의 a태그 속성설정 */
+            display: inline-block; 
+            width: 50px; 
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;/* 밑줄제거 */
+        }
+
+        .box2 {background-color: black; text-align: center;}
+        .box2 div{display: inline;}
+        .box2 a{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: aquamarine;
+            text-align: center;
+            text-decoration: none;
+        }
+        .box2 a:hover {background-color: #777;} /* 마우스를 올리면 색상이 활성화되는 hover를 사용함 */
+    </style>
+
+
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="box">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <div class="box2">
+            <div><a href="#">메뉴1</a></div>
+            <div><a href="#">메뉴1</a></div>
+            <div><a href="#">메뉴1</a></div>
+            <div><a href="#">메뉴1</a></div>
+            <div><a href="#">메뉴1</a></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
