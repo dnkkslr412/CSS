@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; list-style: none;}
+
+        .wrap {width: 1020px; margin: 0 auto;}
+        .content{overflow: hidden;}
+        .list-wrap{width: 480px; float: left; border: 1px solid #777;}
+        .slide-wrap{width: 236px; float: left; border: 1px solid #777; height: 310px; margin-left: 8px;}
+        .user-wrap{width: 280px; float: left; border: 1px solid #777; height: 310px; margin-left: 8px;}
+
+        .list-wrap > ul > li{width: 33.3333%; height: 155px; float: left; box-sizing: border-box; border: 1px solid #777;} 
+        .user-wrap .users {border: 1px solid #777; width: 280px; height: 155px; margin: 0 auto;}
+        .user-wrap .promotion {border: 1px solid #777; height: 155px;}
+        .user-wrap .users button {
+            background-color: #19ce60;
+            color: #fff;
+            font-size: small;
+            padding: 10px 100px;
+            margin-left: 15px;
+            border: none;
+        }
+        .user-wrap .users .p1 {float: left; box-sizing: border-box; font-size: small; padding-top: 30px;}
+        .user-wrap .users .p2 {float: right; box-sizing: border-box; font-size: small; padding-top: 30px;}
+        
+    </style>
+
+</head>
+<body>
+
+   <section>
+        <div class="wrap">
+            
+        <div class="content">
+            <div class="list-wrap"><!-- 왼쪽 -->
+                <ul>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                    <li>사진</li>
+                </ul>
+            </div>
+            <div class="slide-wrap"><!-- 가운데 -->
+                이미지....
+            </div>
+            <div class="user-wrap"><!-- 오른쪽 -->
+                <div class="users">
+                    <div>
+                        <p class="p1">멜론을 더 안전하게 이용하세요</p>
+                        <p class="p2">회원가입</p>
+                    </div>
+                    <button>로그인</button>
+                </div>
+                <div class="promotion">
+                    프로모션 영역...
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
