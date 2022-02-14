@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {overflow: hidden; width: 500px; margin: 0 auto; background-color: aqua;}
+        .box {width: 25%; float: left; background-color: yellow; height: 100px;}
+
+        .pos {
+            background-color: brown;
+            /* 부모요소 기반으로 z축으로 올린다 (relative를 기준으로 배치(없다면 body기준으로 배치가 됨)) */
+            /* 현재는 .pos에다가 맵솔루트 설정을 해서 아래 세션기준에 넘어가지않게 세션에다가 릴레이티브를 넣어줌 
+               세션에 릴레이티브가 없다면 바디기준으로 기준이 올라감*/
+            position: absolute; 
+            right: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- section, .box 기준으로 릴레이티브를 배치해서 확인(결과는 같았음) -->
+    <section style="position: relative;">
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box" >
+            박스
+            <div class="pos">포지션</div>
+        </div>
+    </section>
+
+</body>
+</html>
