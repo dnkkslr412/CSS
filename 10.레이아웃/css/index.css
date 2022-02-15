@@ -74,14 +74,29 @@ html, body{font-family: 'Festive', cursive;
 .tab-content ul li a {display: block; overflow: hidden;  border: 1px solid #777;}
 .tab-content ul li a span {display: block;}
 
-.tab-content ul li a .spana{float: left; width: 40%; text-align: center;}
-.tab-content ul li a .spanb{float: right; width: 60%; text-align: center;}
+.tab-content ul li a .spana{float: left; width: 30%; text-align: center;}
+.tab-content ul li a .spanb{float: right; width: 70%; text-align: center;}
+
+.tab-content ul li a img{margin-top: 4px;}
 
 
+.tab-content ul li a .spanb > strong{/* 상자보다 긴 컨텐츠에 대해서 생략...처리 */
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    display: block;
+    width: 125px;
+}
 
-
-
-
+/* footer */
+footer {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 
 
