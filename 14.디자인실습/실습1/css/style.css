@@ -122,7 +122,7 @@ footer .footer-menu .copyright-menu li a {
 /* 블로그스타일 메뉴 */
 /* 임시적으로 사이즈변경 */
 @media(min-width: 1200px) {
-    .blog-style > .col-lg-2 {
+    .blog-style > .col-lg-2 { /* 12사이즈되는 창에 5개의 메뉴를 균등하게 놓기위한 방법 */
         width: 20%;
     }
 }
